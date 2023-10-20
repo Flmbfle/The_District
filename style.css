@@ -1,0 +1,23 @@
+.beige {
+    color: #FEF4E8;
+}
+.bg-beige {
+    background-color: #FEF4E8;
+}
+.mauve {
+    color: #970747;
+}
+.bg-mauve {
+    background-color: #970747;
+}
+.image-100 {
+    width: 100px;
+}
+.small-logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+.medium-logo {
+    max-width: 120px;
+    max-height: 120px;
+}
