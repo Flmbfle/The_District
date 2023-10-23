@@ -21,3 +21,81 @@
     max-width: 120px;
     max-height: 120px;
 }
+.parallax {
+    /* The image used */
+    background-image: url("assets/img/The\ district.png");
+  
+    /* Set a specific height */
+    min-height: 100vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  /*--------------------------------------------------------------------------------------------------------------------*/
+
+  * {
+	font-family: montserrat;
+}
+video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: 800px;
+	z-index: 0;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.parallax-container {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.parallax-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.parallax2 {
+    background-image: url(assets/img/The\ district\ \(1\).png);
+}
+
+.card-img-top {
+    width: auto;
+    transition: transform .2s;
+}
+
+.card-img-top:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+footer li:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform:scale(1.2);
+}
+
