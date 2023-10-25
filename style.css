@@ -111,3 +111,8 @@ footer li:hover {
 .carousel-caption {
     margin-bottom: 200px;
 }
+
+.nav-item {
+    font-weight:600;
+    font-size: larger;
+}
