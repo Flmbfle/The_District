@@ -25,17 +25,20 @@
             <div class="collapse navbar-collapse" id="headerNav">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link beige active" aria-current="page" href="index.html">Accueil</a>
+                  <a class="nav-link beige active fs-3" aria-current="page" href="index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link beige" href="categorie.html">Catégorie</a>
+                  <a class="nav-link beige fs-3" href="categorie.html">Catégorie</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link beige" href="test.html">Plats</a>
+                  <a class="nav-link beige fs-3" href="test.html">Plats</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link beige" href="categorie.html">Contact</a>
+                  <a class="nav-link beige fs-3" href="categorie.html">Contact</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link beige fs-3" href="commande.html">logo panier</a>
+              </li>
               </ul>
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FEF4E8" class="bi bi-person-circle me-3" viewBox="0 0 20 20">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z">
@@ -46,55 +49,56 @@
         </nav>
       </header>
       <!--Main-->
-      <main class="bg-beige rounded-3 p-3 mt-2">
-        <!--Caroussel-->
-        <div id="carouselExampleInterval" class="carousel slide mt-2 shadow p-1 position-relative  d-none d-lg-block" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="video-container">
+      <main class="bg-beige rounded-3 p-2 mt-2">
+            <div class="video-container d-none d-lg-block">
               <div class="video-content">
                 <!-- Vidéo -->
                 <video autoplay="autoplay" loop="loop"><source src="assets/vids/production_id_4253721(2160p).mp4" type="video/mp4"></video>
               </div>
             </div>
-          </div>
           <!--Recherche-->
           <form class="d-none d-lg-flex position-absolute top-50 start-50 translate-middle">
-            <input class="form-control me-2 rounded-pill" type="search" placeholder="Que désiriez-vous ?" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Rechercher</button>
+            <input class="form-control me-2 rounded-pill fs-4" type="search" placeholder="Que désiriez-vous ?" aria-label="Search">
+            <button class="btn btn-outline-success fs-5" type="submit">Rechercher</button>
           </form>
-        </div>
           <!--Parallax Catégorie-->
-          <div class="parallax d-none d-lg-block rounded-2 border border-5 border-black"></div>
+          <div class="parallax d-none d-lg-block rounded-2 border border-2 border-black my-2"></div>
         <!--Catégorie-->
-        <section class="d-none d-md-block content bg-mauve rounded-5 border-secondary border-4 p-md-4  pt-sm-5 mt-sm-2">
+        <section class="d-none d-md-block content bg-mauve rounded-5 border-secondary border-4 p-md-4">
           <!--Première Ligne-->
           <div class="row mt-4 d-none d-md-flex">
             <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/category/asian_food_cat.jpg" alt="Catégorie Asian" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Asian</p>
+              <p class="card-title beige fs-4 fw-semibold">Asian</p></a>
             </div>
             <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/category/burger_cat.jpg" alt="Catégorie Burger" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Burger</p>
+              <p class="card-title beige fs-4 fw-semibold">Burger</p></a>
             </div>
             <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/category/pasta_cat.jpg" alt="Catégorie Pasta" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Pasta</p>
+              <p class="card-title beige fs-4 fw-semibold">Pasta</p></a>
             </div>
           </div>
           <!--Deuxième ligne-->
           <div class="row mt-4 d-none d-md-flex">
             <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/category/pizza_cat.jpg" alt="Catégorie Pizza" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Pizza</p>
+              <p class="card-title beige fs-4 fw-semibold">Pizza</p></a>
             </div>
             <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/category/sandwich_cat.jpg" alt="Catégorie Sandwich" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Sandwich</p>
+              <p class="card-title beige fs-4 fw-semibold">Sandwich</p></a>
             </div>
             <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/category/salade_cat.jpg" alt="Catégorie Veggies" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Veggies</p>
+              <p class="card-title beige fs-4 fw-semibold">Veggies</p></a>
             </div>
           </div>
         </section>
@@ -107,32 +111,39 @@
           <!--Première Ligne-->
           <div class="row mt-md-3 py-3">
             <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto p-5 py-0 border-0 mb-sm-3">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/lasagnes_viande.jpg" alt="lasagnes_viande" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Lasagnes</p>
+              <p class="card-title beige fs-4 fw-semibold">Lasagnes</p></a>
             </div>
             <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto p-5 py-0 border-0 mb-sm-3">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/Food.Name.3631.jpg" alt="Croc-monsieur" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Croc-monsieur</p>
+              <p class="card-title beige fs-4 fw-semibold">Croc-monsieur</p></a>
             </div>
             <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto p-5 py-0 border-0 mb-sm-3">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/pizza.salmon.jpg" alt="Pizza Saumon" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Pizza Saumon</p>
+              <p class="card-title beige fs-4 fw-semibold">Pizza Saumon</p></a>
             </div>
             <div class="d-md-none col-md-3 text-center card bg-mauve rounded-5 m-auto p-5 py-0 border-0 mb-sm-3">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/hamburger.jpg" alt="Hamburger" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Hamburger</p>
+              <p class="card-title beige fs-4 fw-semibold">Hamburger</p></a>
             </div>
             <div class="d-md-none col-md-3 text-center card bg-mauve rounded-5 m-auto p-5 py-0 border-0 mb-sm-3">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/Food.Name.8298.jpg" alt="Pizza Veggies" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Pizza Veggies</p>
+              <p class="card-title beige fs-4 fw-semibold">Pizza Veggies</p></a>
             </div>
             <div class="d-md-none col-md-3 text-center card bg-mauve rounded-5 m-auto p-5 py-0 border-0 mb-sm-3">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/Food.Name.6340.jpg" alt="Hamburger" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Hamburger</p>
+              <p class="card-title beige fs-4 fw-semibold">Hamburger</p></a>
             </div>
             <div class="d-md-none col-md-3 text-center card bg-mauve rounded-5 m-auto p-5 py-0 border-0 mb-sm-3">
+              <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
               <img src="assets/img/resize/Food.Name.3461.jpg" alt="Wrap" class="img-fluid rounded-5 card-img-bottom">
-              <p class="card-title beige fs-5 fw-semibold">Wrap</p>
+              <p class="card-title beige fs-4 fw-semibold">Wrap</p></a>
             </div>
             <div class="d-md-none d-flex justify-content-center mt-3">
               <a href="plats.html" class="beige"><h2 class="fw-bold">Voir plus</h2></a>
@@ -160,8 +171,8 @@
                     </div>
             </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>

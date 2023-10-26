@@ -17,9 +17,9 @@
     max-width: 50px;
     max-height: 50px;
 }
-.medium-logo {
-    max-width: 120px;
-    max-height: 120px;
+.image-50 {
+    height: 50vh;
+    width: 100%;
 }
 
 
@@ -112,7 +112,26 @@ footer li:hover {
     margin-bottom: 200px;
 }
 
-.nav-item {
+.nav-link {
     font-weight:600;
     font-size: larger;
+}
+
+.fleche-g {
+    position: absolute;
+    top: 85%;
+    z-index: 5;
+    display: inline-block;
+    }
+
+.fleche-d {
+    
+    position: absolute;
+    top: 85%;
+    z-index: 5;
+    display: inline-block;
+    }
+
+.fleche {
+    height: 5em;
 }
