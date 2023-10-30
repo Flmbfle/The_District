@@ -37,7 +37,7 @@ video {
 
 .parallax {
     /* The image used */
-    background-image: url("assets/img/The\ district.png");
+    background-image: url("assets/img/parallax/The\ district.png");
   
     /* Set a specific height */
     min-height: 50vh; 
@@ -82,7 +82,7 @@ video {
 }
 
 .parallax2 {
-    background-image: url(assets/img/The\ district\ \(1\).png);
+    background-image: url(assets/img/parallax/The\ district\ \(1\).png)
 }
 
 .card {
@@ -117,22 +117,6 @@ footer li:hover {
     font-size: larger;
 }
 
-.fleche-g {
-    position: absolute;
-    top: 85%;
-    z-index: 5;
-    display: inline-block;
-    }
-
-.fleche-d {
-    
-    position: absolute;
-    top: 85%;
-    z-index: 5;
-    display: inline-block;
-    }
-
 .fleche {
-
+    width: 180px;
 }
-
