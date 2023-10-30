@@ -8,8 +8,21 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5TSQ4RDF');
+    </script>
+  <!-- End Google Tag Manager -->
   </head>
   <body class="d-flex h-100 bg-dark">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSQ4RDF"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+      <!-- End Google Tag Manager (noscript) -->
     <div class="container py-2 bg-dark rounded-4">
       <!--Header-->
       <header>
@@ -31,36 +44,47 @@
                   <a class="nav-link beige fs-3" href="categorie.html">Catégorie</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link beige fs-3" href="test.html">Plats</a>
+                  <a class="nav-link beige fs-3" href="plats.html">Plats</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link beige fs-3" href="categorie.html">Contact</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link beige fs-3" href="commande.html">logo panier</a>
-              </li>
               </ul>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FEF4E8" class="bi bi-person-circle me-3" viewBox="0 0 20 20">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z">
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-              </svg>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link beige fs-3" href="commande.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                      <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link beige fs-3" href="compte.html"></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#FEF4E8" class="bi bi-person-circle" viewBox="0 0 20 20">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </li>
+              </ul>     
             </div>
           </div>
         </nav>
       </header>
       <!--Main-->
       <main class="bg-beige rounded-3 p-2 mt-2">
-            <div class="video-container d-none d-lg-block">
-              <div class="video-content">
+        <div class="video-container d-none d-lg-flex">
+            <div class="video-content">
                 <!-- Vidéo -->
-                <video autoplay="autoplay" loop="loop"><source src="assets/vids/production_id_4253721(2160p).mp4" type="video/mp4"></video>
-              </div>
+                <video autoplay="autoplay" loop="loop">
+                    <source src="assets/vids/production_id_4253721(2160p).mp4" type="video/mp4">
+                </video>
             </div>
-          <!--Recherche-->
-          <form class="d-none d-lg-flex position-absolute top-50 start-50 translate-middle">
-            <input class="form-control me-2 rounded-pill fs-4" type="search" placeholder="Que désiriez-vous ?" aria-label="Search">
-            <button class="btn btn-outline-success fs-5" type="submit">Rechercher</button>
-          </form>
+            <!-- Recherche -->
+            <form class="d-none d-lg-flex position-absolute top-50 start-50 translate-middle">
+                <input class="form-control me-2 rounded-pill fs-4" type="search" placeholder="Que désiriez-vous ?" aria-label="Search">
+                <button class="btn btn-outline-success fs-5" type="submit">Rechercher</button>
+            </form>
+        </div>
           <!--Parallax Catégorie-->
           <div class="parallax d-none d-lg-block rounded-2 border border-2 border-black my-2"></div>
         <!--Catégorie-->
