@@ -86,7 +86,6 @@ video {
 }
 
 .card {
-    width: 30vh;
     transition: transform .2s;
 }
 
@@ -120,4 +119,12 @@ footer li:hover {
 
 .fleche {
     width: 180px;
+}
+
+.text-bg-mauve {
+    background-color:#970747;
+}
+
+.mh-200 {
+    max-height: 300px;
 }

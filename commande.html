@@ -27,7 +27,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSQ4RDF"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-    <div class="container py-2 bg-beige rounded-4">
+    <div class="container py-2 bg-dark rounded-4">
       <!--Header-->
       <header>
         <!--Nav-->
@@ -75,48 +75,54 @@
         </nav>
       </header>
 
-      <main>
+      <main class="bg-beige rounded-3">
         <div>
           <div></div><!--Plats commandé-->
-          <div>
-            <form action="">
+          <div class="px-5 py-2 shadow mt-2 rounded-3">
+            <form action="" class="row d-flex justify-content-around">
               <!-- NOM PRENOM-->
-              <div class="mb-2">
+              <div class="my-2">
                 <label for="exampleInputNom" class="form-label">Nom et Prénom<b>*</b></label>
                 <input type="text" class="form-control" id="exampleInputNom" placeholder="Veuillez saisir votre nom" required>
                 <div class="text-danger alert alert-danger d-none" role="alert" id="NomPrenomError"></div>
               </div>
 
               <!-- EMAIL -->
-              <div>
+              <div class="col-md-6 my-2">
                 <label for="exampleInputEmail" class="form-label">Email<b>*</b></label>
                 <input type="email" class="form-control" id="exampleInputEmail" placeholder="dave.loper@afpa.fr" required>
+                <div class="text-danger alert alert-danger d-none" role="alert" id="EmailError"></div>
                 <div id="emailHelp" class="form-text text-black-50">
                   Nous ne partagerons jamais votre email.
                 </div>
-                <div class="text-danger alert alert-danger d-none" role="alert" id="EmailError"></div>
               </div>
 
               <!--TELEPHONE-->
-              <div>
+              <div class="col-md-6 my-2">
                 <label for="exampleInputTel" class="form-label">Téléphone<b>*</b></label>
                 <input type="tel" class="form-control" id="exampleInputTel" placeholder="06.00.00.00.00" required>
                 <div class="text-danger alert alert-danger d-none" role="alert" id="TelError"></div>
               </div>
               <!--ADRESSE-->
-              <div class="mb-2">
+              <div class="my-2">
                 <label for="exampleInputAdresse" class="form-label">Adresse<b>*</b></label>
                 <input type="text" class="form-control" id="exampleInputAdresse" required>
                 <div class="text-danger alert alert-danger d-none" role="alert" id="AdresseError"></div>
               </div>
 
               <!--CONDITIONS-->
-              <input type="checkbox" name="conditions" value="j'accepte le traitement informatique de ce formulaire"  id="conditions" required>
-              <span class="fs-6"><b>*</b>J'accepte le traitement informatique de ce formulaire.</span><br>
-              <div class="text-danger alert alert-danger d-none" role="alert" id="ConditionError"></div>
+              <div class="row">
+                <div class="my-2">
+                  <input type="checkbox" name="conditions" value="j'accepte le traitement informatique de ce formulaire"  id="conditions" required>
+                  <span class="fs-6"><b>*</b>J'accepte le traitement informatique de ce formulaire.</span><br>
+                  <div class="text-danger alert alert-danger d-none" role="alert" id="ConditionError"></div>
+                </div>
 
-              <input type="submit" id="btn_envoyer" class="btn text-bg-dark">
-              <input type="reset" value="Annuler" id="btn_annuler" class="btn text-bg-dark">
+                <div class="d-flex justify-content-end">
+                  <input type="reset" value="Annuler" id="btn_annuler" class="btn text-bg-light btn-outline-dark">
+                  <input type="submit" id="btn_envoyer" class="btn text-bg-light btn-outline-dark mx-2">
+                </div>
+              </div>
             </form>
           </div>
         </div>
