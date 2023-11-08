@@ -91,9 +91,9 @@ video {
 
 
 .card:hover {
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 footer li:hover {
@@ -125,6 +125,43 @@ footer li:hover {
     background-color:#970747;
 }
 
-.mh-200 {
-    max-height: 300px;
+  /* Classe pour les cartes */
+  .card-custom {
+    max-height: 260px;
+    margin: 0;
+    border: 1px solid #ccc; /* Ajoutez une bordure autour des cartes si nécessaire */
+    overflow: hidden; /* Empêche le contenu de déborder de la carte */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Place le contenu en bas de la carte */
+    
+  }
+  
+  /* Classe pour positionner le bouton "Commander" et le prix en bas à droite */
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+
+.scrollable-text {
+    max-height: 100px; /* Hauteur maximale souhaitée */
+    overflow-y: auto; /* Ajoutez une barre de défilement verticale en cas de dépassement du contenu */
+}
+@media (max-width: 768px) {@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    .card-custom{
+        max-height: max-content;
+        display: flex;
+      }
+    .card-img {
+        height: auto;
+        width: auto;
+    }
+  }
 }
