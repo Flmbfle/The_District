@@ -90,7 +90,7 @@ video {
 }
 
 
-.card:hover {
+.card:hover  {
     -ms-transform: scale(1.02);
     -webkit-transform: scale(1.02);
     transform: scale(1.02);

@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    //TEST COULEUR QUAND ON FOCUS QUELQUE CHOSE
+    $('input').focus(function(){
+        $(this).css('background-color' , '#970747');
+    });
+    $('input').blur(function(){
+        $(this).css('background-color' , '#FEF4E8')
+    })
+    
     function verif() {
         var envoi = true;
 
@@ -48,3 +56,4 @@ $(document).ready(function() {
         effacerErreurs();
     });
 });
+
