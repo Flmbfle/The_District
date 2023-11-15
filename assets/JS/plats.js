@@ -1,30 +1,13 @@
 $(document).ready(function() {
     // Chargez le fichier JSON à l'aide de jQuery Ajax
     $.getJSON('/assets/Json/theDistrict.json', function(data) {
-      // Affichez les catégories
-      var categoriesDiv = $('#categories');
-      data.categorie.forEach(function(categorie) {
-        if (categorie.active === 'Yes') {
-          // Créez la structure de la carte simplifiée
-          var cardDiv = $('<div class="card col-md-3 m-3"></div>');
-          var image = $('<img src="' + categorie.image + '" class="card-img-top img-fluid" alt="' + categorie.libelle + '">');
-          var cardBody = $('<div class="card-body"></div>');
-          var cardText = $('<p class="card-text">' + categorie.libelle + '</p>');
-  
-          // Ajoutez les éléments à la structure de la carte
-          cardDiv.append(image);
-          cardBody.append(cardText);
-          cardDiv.append(cardBody);
-          categoriesDiv.append(cardDiv);
-        }
-      });
 
     // Affichez les plats
     var platsDiv = $('#plats');
     data.plat.forEach(function(plat) {
       if (plat.active === 'Yes') {
         // Créez la structure de la carte pour les plats
-        var cardDiv = $('<div class="card my-3 col-lg-5 border border-black bg-beige mauve card-custom rounded-4"></div>'); // Utilisez la classe card-custom
+        var cardDiv = $('<div class="card m-3 col-lg-5 border border-black bg-beige mauve card-custom rounded-4"></div>'); // Utilisez la classe card-custom
         var cardRow = $('<div class="row g-0 bg-beige"></div>');
         var imageCol = $('<div class="col-md-4 col-lg-5 d-flex align-items-center justify-content-center"></div>'); // Utilisez les classes pour centrer verticalement et horizontalement
         var image = $('<img src="' + plat.image + '" class="card-img img-fluid" alt="' + plat.libelle + '">');

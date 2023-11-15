@@ -76,8 +76,8 @@
     "plat": [
     {
     "id_plat": 1,
-    "libelle": "District Burger",
-    "description": "Burger composé d'un bun's du boulanger, deux steaks de 80g (origine française), de deux tranches poitrine de porc fumée, de deux tranches cheddar affiné, salade et oignons confits. .",
+    "libelle": "Big Burger",
+    "description": "Succombez à l'irrésistible. Un mariage parfait de steak grillé, fromage fondant, légumes croquants, et une touche secrète de sauce. Un festival de saveurs à chaque bouchée, un vrai régal pour les amateurs de burgers.",
     "prix": 8,
     "image": "assets/img/plats/burger/hamburger.jpg",
     "id_categorie": 2,
@@ -86,7 +86,7 @@
     {
     "id_plat": 2,
     "libelle": "César Salad",
-    "description": "Une délicieuse salade Caesar (César) composée de filets de poulet grillés, de feuilles croquantes de salade romaine, de croutons à l'ail, de tomates cerise et surtout de sa fameuse sauce Caesar. Le tout agrémenté de copeaux de parmesan.",
+    "description": "Une symphonie de saveurs dans une salade fraîche avec des feuilles de laitue, des légumes, du fromage et une vinaigrette maison.",
     "prix": 7,
     "image": "assets/img/plats/salade/salad1.jpg",
     "id_categorie": 7,
@@ -94,24 +94,42 @@
     },
     {
     "id_plat": 3,
-    "libelle": "District Burger",
-    "description": "Burger composé d'un bun's du boulanger, deux steaks de 80g (origine française), de deux tranches poitrine de porc fumée, de deux tranches cheddar affiné, salade et oignons confits. .",
-    "prix": 8,
-    "image": "assets/img/plats/burger/hamburger.jpg",
+    "libelle": "Burger",
+    "description": "Burger composé d'un pain brioché , un steak de 100g (origine française), de deux tranches de tomates, de deux tranches cheddar affiné, salade et oignons confits.",
+    "prix": 7,
+    "image": "assets/img/plats/burger/burger_cat.jpg",
     "id_categorie": 2,
     "active": "Yes"
     },
     {
     "id_plat": 4,
     "libelle": "District Burger",
-    "description": "Burger composé d'un bun's du boulanger, deux steaks de 80g (origine française), de deux tranches poitrine de porc fumée, de deux tranches cheddar affiné, salade et oignons confits. .",
-    "prix": 8,
-    "image": "assets/img/plats/burger/hamburger.jpg",
+    "description": "Burger composé d'un bun's du boulanger, d'un steaks de 180g (origine française),de deux tranches de cheddar affiné, salade et oignons confits, cornichons.",
+    "prix": 9.50,
+    "image": "assets/img/plats/burger/Food.Name.6340.jpg",
     "id_categorie": 2,
     "active": "Yes"
     },
     {
     "id_plat": 5,
+    "libelle": "American Burger",
+    "description": "Un festin authentique avec un steak de bœuf généreux, du bacon croustillant, du fromage fondant, des oignons caramélisés et une sauce barbecue fumée.",
+    "prix": 9,
+    "image": "assets/img/plats/burger/pexels.cottonbro.studio.4676413.jpg",
+    "id_categorie": 2,
+    "active": "Yes"
+    },
+    {
+    "id_plat": 6,
+    "libelle": "Chicken Burger",
+    "description": "Tendre poulet grillé, garniture croustillante et une sauce spéciale, une combinaison parfaite de textures et de saveurs.",
+    "prix": 8.50,
+    "image": "assets/img/plats/burger/pexels.thiago.lazaro.2874990.jpg",
+    "id_categorie": 2,
+    "active": "Yes"
+    },
+    {
+    "id_plat": 7,
     "libelle": "Pizza Bianca",
     "description": "Une pizza fine et croustillante garnie de crème mascarpone légèrement citronnée et de tranches de saumon fumé, le tout relevé de baies roses et de basilic frais.",
     "prix": 14,
@@ -122,7 +140,7 @@
     {
     "id_plat": 10,
     "libelle": "Cheeseburger",
-    "description": "Burger composé d’un bun’s du boulanger, de salade, oignons rouges, pickles, oignon confit, tomate, d’un steak d’origine Française, d’une tranche de cheddar affiné, et de notre sauce maison.",
+    "description": "Un délice juteux avec un steak grillé, du fromage fondant, des légumes frais et une sauce secrète. Chaque bouchée offre une explosion de saveurs.",
     "prix": 8,
     "image": "assets/img/plats/burger/cheesburger.jpg",
     "id_categorie": 2,
