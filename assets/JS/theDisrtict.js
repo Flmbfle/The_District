@@ -62,6 +62,7 @@ $(document).ready(function(){
         
             // Afficher les résultats dans la div dédiée
             $("#searchResults").html(resultHtml);
+            
         }
     });
 }); 
