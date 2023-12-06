@@ -7,11 +7,13 @@ $(document).ready(function() {
         $(this).css('background-color' , '#FEF4E8')
     })
     
+    function effacerErreurs() {
+        // Réinitialisez les messages d'erreur et masquez-les
+        $(".text-danger").text("").addClass("d-none");
+    }
+
     function verif() {
         var envoi = true;
-
-        // Réinitialisez les messages d'erreur et masquez-les au début de la validation
-        $(".text-danger").text("").addClass("d-none");
 
         var nom = $("#exampleInputNom").val();
         var adresse = $("#exampleInputAdresse").val();

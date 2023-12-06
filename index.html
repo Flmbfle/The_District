@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5TSQ4RDF');</script>
-  <!-- End Google Tag Manager -->
     <title>The District</title>
     <meta name="Content-Type" content="UTF-8">
     <meta name="Content-Language" content="fr">
@@ -24,12 +17,6 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
   </head>
   <body class="d-flex h-100 bg-dark">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSQ4RDF" height="0" width="0" style="display:none;visibility:hidden">
-      </iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <div class="container py-2 bg-dark rounded-4">
       <!--Header-->
       <header>
@@ -45,7 +32,7 @@
             <div class="collapse navbar-collapse" id="headerNav">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link beige active fs-3 ms-2" aria-current="page" href="index.html">Accueil</a>
+                  <a class="nav-link beige fs-3 ms-2 active" aria-current="page" href="index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link beige fs-3 ms-2" href="categorie.html">Catégorie</a>
@@ -54,7 +41,7 @@
                   <a class="nav-link beige fs-3 ms-2" href="plats.html">Plats</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link beige fs-3 ms-2" href="categorie.html">Contact</a>
+                  <a class="nav-link beige fs-3 ms-2" href="contact.html">Contact</a>
                 </li>
               </ul>
               <ul class="navbar-nav">
@@ -100,107 +87,14 @@
 
             <!--Catégorie-->
 
-            <section class="d-none d-md-block content bg-mauve rounded-5 border-secondary border-4 p-md-4 content-to-hide">
+            <section class="d-none d-lg-block content bg-mauve rounded-5 border-secondary border-4 p-md-4 content-to-hide">
               <!--Première Ligne-->
-              <div class="row mt-4 d-none d-md-flex justify-content-around">
-                <div class="col-md-3 text-center card bg-mauve border-0">
-                  <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
-                    <img src="assets/img/categorie/asian_food_cat.jpg" alt="Catégorie Asian" class="img-fluid rounded-3 card-img-bottom">
-                    <h2 class="card-title beige fw-semibold">Asian</h2>
-                  </a>
-                </div>
-                <div class="col-md-3 text-center card bg-mauve border-0">
-                  <a href="platsCategorie.html" class="btn bg-mauve fs-4 fw-semibold beige">
-                    <img src="assets/img/categorie/burger_cat.jpg" alt="Catégorie Burger" class="img-fluid rounded-3 card-img-bottom">
-                    <h2 class="card-title beige fw-semibold">Burger</h2>
-                  </a>
-                </div>
-                <div class="col-md-3 text-center card bg-mauve border-0">
-                  <a href="#" class="btn bg-mauve fs-4 fw-semibold beige">
-                    <img src="assets/img/categorie/pasta_cat.jpg" alt="Catégorie Pasta" class="img-fluid rounded-3 card-img-bottom">
-                    <h2 class="card-title beige fw-semibold">Pasta</h2>
-                  </a>
-                </div>
-              </div>
-              <!--Deuxième ligne-->
-              <div class="row mt-4 d-none d-md-flex justify-content-around">
-                <div class="col-md-3 text-center card bg-mauve border-0">
-                  <a href="#" class="btn bg-mauve">
-                    <img src="assets/img/categorie/pizza_cat.jpg" alt="Catégorie Pizza" class="img-fluid rounded-3 card-img-bottom">
-                    <h2 class="card-title beige fw-semibold">Pizza</h2>
-                  </a>
-                </div>
-                <div class="col-md-3 text-center card bg-mauve border-0">
-                  <a href="#" class="btn bg-mauve">
-                    <img src="assets/img/categorie/sandwich_cat.jpg" alt="Catégorie Sandwich" class="img-fluid rounded-3 card-img-bottom">
-                    <h2 class="card-title beige fw-semibold">Sandwich</h2>
-                  </a>
-                </div>
-                <div class="col-md-3 text-center card bg-mauve border-0">
-                  <a href="#" class="btn bg-mauve fs-4">
-                    <img src="assets/img/categorie/salade_cat.jpg" alt="Catégorie Veggies" class="img-fluid rounded-3 card-img-bottom">
-                    <h2 class="card-title beige fw-semibold">Veggies</h2>
-                  </a>
-                </div>
-              </div>
+              <div id="categories-1" class="d-flex flex-wrap justify-content-around"></div>
             </section>
             <!--Parallax Plats-->
             <div class="mt-md-2 parallax parallax2 d-none d-lg-block rounded-2 content-to-hide"></div>
             <!--Plats-->
-
-            <section class="content bg-mauve rounded-5 border-secondary border-4 pt-md-2  pt-sm-4 mt-sm-2 mb-md-2 content-to-hide">
-              <!--Titre Mobile-->
-              <h1 class="d-md-none d-flex justify-content-center mt-3 beige pt-3 fs-1 fw-bold">Tous les plats</h1>
-              <!--Première Ligne-->
-              <div class="row mt-md-3 py-3 mx-2 d-flex justify-content-around" id="acc">
-                <div class="text-center card bg-mauve col-md-3 border-0 mb-sm-3">
-                  <a href="#" class="btn bg-mauve">
-                  <img src="assets/img/plats/pasta/lasagnes_viande.jpg" alt="lasagnes_viande" class="img-fluid rounded-3 card-img-bottom w-75">
-                  <h4 class="card-title beige fw-semibold">Lasagnes</h4></a>
-                </div>
-                <div class="text-center card bg-mauve col-md-3 border-0 mb-sm-3">
-                  <a href="#" class="btn bg-mauve">
-                    <img src="assets/img/plats/sandwich/Food.Name.3631.jpg" alt="Croc-monsieur" class="img-fluid rounded-3 card-img-bottom w-75">
-                    <h4 class="card-title beige fw-semibold">Croc-monsieur</h4>
-                  </a>
-                </div>
-                <div class="text-center card bg-mauve col-md-3 me-md-4 border-0 mb-sm-3">
-                  <a href="#" class="btn bg-mauve">
-                    <img src="assets/img/plats/pizza/pizza.salmon.jpg" alt="Pizza Saumon" class="img-fluid rounded-3 card-img-bottom w-75">
-                    <h4 class="card-title beige fw-semibold">Pizza Saumon</h4>
-                  </a>
-                </div>
-                <div class="d-md-none text-center card bg-mauve col-md-4 rounded-5 m-auto border-0 mb-sm-3">
-                  <a href="#" class="btn bg-mauve">
-                    <img src="assets/img/plats/burger/hamburger.jpg" alt="Hamburger" class="img-fluid rounded-3 card-img-bottom w-75">
-                    <h4 class="card-title beige fw-semibold">Hamburger</h4>
-                  </a>
-                </div>
-                <div class="d-md-none text-center card bg-mauve col-md-4 rounded-5 m-auto border-0 mb-sm-3">
-                  <a href="#" class="btn bg-mauve">
-                    <img src="assets/img/plats/veggies/Food.Name.8298.jpg" alt="Pizza Veggies" class="img-fluid rounded-3 card-img-bottom w-75">
-                    <h4 class="card-title beige fw-semibold">Pizza Veggies</h4>
-                  </a>
-                </div>
-                <div class="d-md-none text-center card bg-mauve col-md-4 rounded-5 m-auto border-0 mb-sm-3">
-                  <a href="#" class="btn bg-mauve">
-                    <img src="assets/img/plats/burger/Food.Name.6340.jpg" alt="Hamburger" class="img-fluid rounded-3 card-img-bottom w-75">
-                    <h4 class="card-title beige fw-semibold">Hamburger</h4>
-                  </a>
-                </div>
-                <div class="d-md-none text-center card bg-mauve rounded-5 m-auto border-0 mb-sm-3">
-                  <a href="#" class="btn bg-mauve">
-                    <img src="assets/img/plats/wrap/Food.Name.3461.jpg" alt="Wrap" class="img-fluid rounded-3 card-img-bottom w-75">
-                    <h4 class="card-title beige fw-semibold">Wrap</h4>
-                  </a>
-                </div>
-                <div class="d-md-none d-flex justify-content-center mt-3">
-                  <a href="plats.html" class="beige">
-                    <h2 class="fw-bold">Voir plus</h2>
-                  </a>
-                </div>
-              </div>
-            </section>
+            <div id="plats" class="d-flex flex-wrap justify-content-around mx-auto"></div>
           </div>
         </article>
           <!--Caroussel Bas de Page-->
@@ -279,14 +173,15 @@
         </div>
       </footer>  
     </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
-      </script> 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js">
-      </script>
-
-      <script src="assets/JS/theDisrtict.js">
-      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="/assets/JS/theDisrtict.js">
+    </script>
   </body>
 </html>
