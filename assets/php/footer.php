@@ -22,7 +22,7 @@ echo
       </svg>
     </a>       
     <!-- The District -->
-    <a class="navbar-brand nav-item m-5" href="index.html">
+    <a class="navbar-brand nav-item m-5" href="index.php">
       <img src="assets/img/the_district_brand/logo_transparent.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-center">
     </a>  
     <!-- Instagram -->
