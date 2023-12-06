@@ -87,7 +87,7 @@ $(document).ready(function() {
         var categoriesDiv = $('#categories-' + (index + 1));
         group.forEach(function(categorie) {
             // Créez la structure de la carte simplifiée avec un lien hypertexte
-            var cardLink = $('<a href="platsCategorie.html" class="card-link text-decoration-none"></a>');
+            var cardLink = $('<a href="platsCategorie.php" class="card-link text-decoration-none"></a>');
             var cardDiv = $('<div class="card col-sm-7 col-md-6 col-lg-3 m-4 bg-beige mauve border border-black text-center fs-4"></div>');
             var image = $('<img src="' + categorie.image + '" class="card-img-top img-fluid" alt="' + categorie.libelle + '">');
             var cardBody = $('<div class="card-body p-2"></div>');

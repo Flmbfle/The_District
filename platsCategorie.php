@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5TSQ4RDF');</script>
-  <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="The District, The-District, Restaurant, Gastronomie, Commander, Rapidement, En ligne, Réserver, Catégorie, Burger, Wrap, Pizza, Veggies, Salade, Sandwich, Asian">
@@ -15,119 +8,99 @@
     <meta name="Author" content="Erwan.T">
     <meta name="Publisher" content="Flmbfle">
     <meta name="Geography" content="80000, Amiens, France">
-    
-    <title>The District Commande</title>
+    <title>The District plats par catégorie</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet">
     <link rel="stylesheet" href="assets/CSS/style.css">
   </head>
   <body class="d-flex h-100 bg-dark">
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSQ4RDF"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
     <div class="container py-2 bg-dark rounded-4">
-      <!--Header-->
-      <header>
-        <!--Nav-->
-        <nav class="navbar navbar-expand-md bg-mauve rounded-4">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img src="assets/img/the_district_brand/logo_transparent.png" alt="Logo" width="75" height="75" class="d-inline-block align-text-center">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="headerNav">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link beige fs-3 ms-2"  href="index.html">Accueil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link beige fs-3 ms-2" href="categorie.html">Catégorie</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link beige fs-3 ms-2" href="plats.html">Plats</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link beige fs-3 ms-2" href="contact.html">Contact</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link beige fs-3 active" aria-current="page" href="commande.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                      <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                    </svg>
-                  </a>
-                </li>
-                <li class="nav-item mx-4">
-                  <a class="nav-link beige fs-3" href="compte.html"></a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#FEF4E8" class="bi bi-person-circle" viewBox="0 0 20 20">
-                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                    </svg>
-                </li>
-              </ul>     
+      <?php include 'assets/php/header.php'; ?>
+      <!--Main-->
+      <main class="bg-beige rounded-3 px-4 mt-2 pt-2">
+        <div class="row">
+          <div id="carouselExample" class="carousel slide bg-mauve rounded-5 mb-2">
+            <div class="carousel-inner">
+              <h2 class="bg-mauve p-3 beige m-3 fw-semibold">Nos Burger</h2>
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0 my-4">
+                    <img src="assets/img/plats/burger/cheesburger.jpg" alt="CheesBurger" class="img-fluid rounded-5 card-img-bottom">
+                    <h3 class="card-title beige fw-semibold">CheesBurger</h3>
+                    <p class="card-text beige fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus repudiandae accusantium repellat est molestias suscipit hic, facilis facere ipsam, qui nisi totam iusto ratione reiciendis cumque</p>
+                    <a href="#" class="btn btn-outline-light fs-4 fw-semibold beige">Commander</a>
+                  </div>
+                  <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0 my-4">
+                    <img src="assets/img/plats/burger/burger_cat.jpg" alt="Burger 2" class="img-fluid rounded-5 card-img-bottom">
+                    <h3 class="card-title beige fw-semibold">Burger</h3>
+                    <p class="card-text beige fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus repudiandae accusantium repellat est molestias suscipit hic, facilis facere ipsam, qui nisi totam iusto ratione reiciendis cumque</p>
+                    <a href="#" class="btn btn-outline-light fs-4 fw-semibold beige">Commander</a>
+                  </div>
+                </div>
+                <!--Deuxième ligne-->
+                <div class="row my-4">
+                  <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0 my-4">
+                    <img src="assets/img/plats/burger/Food.Name.6340.jpg" alt="Burger 3" class="img-fluid rounded-5 card-img-bottom">
+                    <h3 class="card-title beige fw-semibold">Burger</h3>
+                    <p class="card-text beige fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus repudiandae accusantium repellat est molestias suscipit hic, facilis facere ipsam, qui nisi totam iusto ratione reiciendis cumque</p>
+                    <a href="#" class="btn btn-outline-light fs-4 fw-semibold beige">Commander</a>
+                  </div>
+                  <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0 my-4">
+                    <img src="assets/img/plats/burger/pexels.cottonbro.studio.4676413.jpg" alt="American Burger" class="img-fluid rounded-5 card-img-bottom">
+                    <h3 class="card-title beige fw-semibold">American Burger</h3>
+                    <p class="card-text beige fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus repudiandae accusantium repellat est molestias suscipit hic, facilis facere ipsam, qui nisi totam iusto ratione reiciendis cumque</p>
+                    <a href="#" class="btn btn-outline-light fs-4 fw-semibold beige">Commander</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0 my-4">
+                    <img src="assets/img/plats/burger/hamburger.jpg" alt="Hamburger" class="img-fluid rounded-5 card-img-bottom">
+                    <h3 class="card-title beige fw-semibold">Hamburger</h3>
+                    <p class="card-text beige fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus repudiandae accusantium repellat est molestias suscipit hic, facilis facere ipsam, qui nisi totam iusto ratione reiciendis cumque</p>
+                    <a href="#" class="btn btn-outline-light fs-4 fw-semibold beige">Commander</a>
+                  </div>
+                  <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0 my-4">
+                    <img src="assets/img/plats/burger/pexels.thiago.lazaro.2874990.jpg" alt="Chicken Burger" class="img-fluid rounded-5 card-img-bottom">
+                    <h3 class="card-title beige fw-semibold">Chicken Burger</h3>
+                    <p class="card-text beige fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus repudiandae accusantium repellat est molestias suscipit hic, facilis facere ipsam, qui nisi totam iusto ratione reiciendis cumque</p>
+                    <a href="#" class="btn btn-outline-light fs-4 fw-semibold beige">Commander</a>
+                  </div>
+                </div>
+                <!--Deuxième ligne-->
+                <div class="row my-4">
+                  <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0 my-4"> 
+                    <img src="assets/img/plats/Coming_soon.jpg" alt="Coming Soon" class="img-fluid rounded-5 card-img-bottom">
+                    <h3 class="card-title beige fw-semibold">Comin"g Soon</h3>
+                    <p class="card-text beige fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus repudiandae accusantium repellat est molestias suscipit hic, facilis facere ipsam, qui nisi totam iusto ratione reiciendis cumque</p>
+                    <a href="#" class="btn btn-outline-light fs-4 fw-semibold beige">Commander</a>
+                  </div> 
+                  <div class="col-md-3 text-center card bg-mauve rounded-5 m-auto border-0 my-4">
+                    <img src="assets/img/plats/Coming_soon.jpg" alt="Coming Soon" class="img-fluid rounded-5 card-img-bottom">
+                    <h3 class="card-title beige fw-semibold">Coming Soon</h3>
+                    <p class="card-text beige fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus repudiandae accusantium repellat est molestias suscipit hic, facilis facere ipsam, qui nisi totam iusto ratione reiciendis cumque</p>
+                    <a href="#" class="btn btn-outline-light fs-4 fw-semibold beige">Commander</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-around mb-3">
+              <button class="btn fleche" type="button" data-slide="prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <img class="img-fluid" src="assets/img/the_district_brand/fleche-gauche.png" alt="Précedent">
+                <span class="visually-hidden">Précedent</span>
+              </button>
+              <button class="btn fleche" type="button" data-slide="next" data-bs-target="#carouselExample" data-bs-slide="next">
+                <img class="img-fluid" aria-hidden="true" src="assets/img/the_district_brand/fleche-droite.png" alt="Suivant">
+                <span class="visually-hidden">Suivant</span>
+              </button>
             </div>
           </div>
-        </nav>
-      </header>
-
-      <main class="bg-beige rounded-3">
-        <div>
-          <div></div><!--Plats commandé-->
-          <div class="px-5 py-2 shadow mt-2 rounded-3">
-            <form action="" class="row d-flex justify-content-around">
-              <!-- NOM PRENOM-->
-              <div class="my-2">
-                <label for="exampleInputNom" class="form-label">Nom et Prénom<b>*</b></label>
-                <input type="text" class="form-control" id="exampleInputNom" placeholder="Veuillez saisir votre nom" required>
-                <div class="text-danger alert alert-danger d-none" role="alert" id="NomPrenomError"></div>
-              </div>
-
-              <!-- EMAIL -->
-              <div class="col-md-6 my-2">
-                <label for="exampleInputEmail" class="form-label">Email<b>*</b></label>
-                <input type="email" class="form-control" id="exampleInputEmail" placeholder="dave.loper@afpa.fr" required>
-                <div class="text-danger alert alert-danger d-none" role="alert" id="EmailError"></div>
-                <div id="emailHelp" class="form-text text-black-50">
-                  Nous ne partagerons jamais votre email.
-                </div>
-              </div>
-
-              <!--TELEPHONE-->
-              <div class="col-md-6 my-2">
-                <label for="exampleInputTel" class="form-label">Téléphone<b>*</b></label>
-                <input type="tel" class="form-control" id="exampleInputTel" placeholder="xx.xx.xx.xx.xx" required>
-                <div class="text-danger alert alert-danger d-none" role="alert" id="TelError"></div>
-              </div>
-              <!--ADRESSE-->
-              <div class="my-2">
-                <label for="exampleInputAdresse" class="form-label">Adresse<b>*</b></label>
-                <input type="text" class="form-control" id="exampleInputAdresse" required>
-                <div class="text-danger alert alert-danger d-none" role="alert" id="AdresseError"></div>
-              </div>
-
-              <!--CONDITIONS-->
-              <div class="row">
-                <div class="my-2">
-                  <input type="checkbox" name="conditions" value="j'accepte le traitement informatique de ce formulaire"  id="conditions" required>
-                  <span class="fs-6"><b>*</b>J'accepte le traitement informatique de ce formulaire.</span><br>
-                  <div class="text-danger alert alert-danger d-none" role="alert" id="ConditionError"></div>
-                </div>
-
-                <div class="d-flex justify-content-end">
-                  <input type="reset" value="Annuler" id="btn_annuler" class="btn text-bg-light btn-outline-dark">
-                  <input type="submit" id="btn_envoyer" class="btn text-bg-light btn-outline-dark mx-2">
-                </div>
-              </div>
-            </form>
-          </div>
         </div>
-      </main>
 
+      </main>
+      <!--Footer-->
       <footer class="d-none d-md-block text-center mt-2">
         <div class="bg-mauve rounded-4 col-md-10 col-lg-8 col-xl-6 mx-auto ">
                 <!-- Facebook -->
@@ -197,10 +170,7 @@
       </script> 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js">
       </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
-      </script>
-      <script src="assets/JS/commande.js">
-      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
       <!-- <script src="assets/js/contact.js"></script> -->
   </body>
 </html>
