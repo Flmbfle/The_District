@@ -1,3 +1,6 @@
+body {
+    min-width: 100vh;
+}
 .beige {
     color: #FEF4E8;
 }
@@ -9,6 +12,10 @@
 }
 .bg-mauve {
     background-color: #970747;
+}
+.border-mauve {
+    --bs-border-opacity: 1;
+    border-color: #970747 !important;
 }
 .image-100 {
     width: 100px;
@@ -165,4 +172,17 @@ footer li:hover {
         width: auto;
     }
   }
+}
+
+.btn-form {
+    background-color: #FEF4E8;
+    transition: transform 0.4s;
+    border-color: #970747;
+    border-width: 2px ;
+}
+.btn-form:hover {
+    -ms-transform: scale(1.15); /* IE 9 */
+    -webkit-transform: scale(1.15); /* Safari 3-8 */
+    transform: scale(1.15);
+    border-color: #970747;
 }

@@ -3,7 +3,7 @@ echo
 '<!--Header-->
 <header>
   <!--Nav-->
-  <nav class="navbar navbar-expand-md bg-mauve rounded-4">
+  <nav class="navbar navbar-expand-md bg-mauve rounded-4 shadow">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="assets/img/the_district_brand/logo_transparent.png" alt="Logo" width="75" height="75" class="d-inline-block align-text-center">
