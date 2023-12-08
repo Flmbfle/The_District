@@ -38,14 +38,14 @@
               <!-- NOM PRENOM-->
               <div class="my-2">
                 <label for="exampleInputNom" class="form-label">Nom et Prénom<b>*</b></label>
-                <input type="text" class="form-control" id="exampleInputNom" placeholder="Veuillez saisir votre nom" required>
+                <input type="text" class="form-control rounded-5 border border-3 border-mauve bg-beige shadow" id="exampleInputNom" placeholder="Veuillez saisir votre nom et votre prénom" required>
                 <div class="text-danger alert alert-danger d-none" role="alert" id="NomPrenomError"></div>
               </div>
 
               <!-- EMAIL -->
               <div class="col-md-6 my-2">
                 <label for="exampleInputEmail" class="form-label">Email<b>*</b></label>
-                <input type="email" class="form-control" id="exampleInputEmail" placeholder="dave.loper@afpa.fr" required>
+                <input type="email" class="form-control rounded-5 border border-3 border-mauve bg-beige shadow" id="exampleInputEmail" placeholder="dave.loper@afpa.fr" required>
                 <div class="text-danger alert alert-danger d-none" role="alert" id="EmailError"></div>
                 <div id="emailHelp" class="form-text text-black-50">
                   Nous ne partagerons jamais votre email.
@@ -55,13 +55,13 @@
               <!--TELEPHONE-->
               <div class="col-md-6 my-2">
                 <label for="exampleInputTel" class="form-label">Téléphone<b>*</b></label>
-                <input type="tel" class="form-control" id="exampleInputTel" placeholder="xx.xx.xx.xx.xx" required>
+                <input type="tel" class="form-control rounded-5 border border-3 border-mauve bg-beige shadow" id="exampleInputTel" placeholder="xx.xx.xx.xx.xx" required>
                 <div class="text-danger alert alert-danger d-none" role="alert" id="TelError"></div>
               </div>
               <!--ADRESSE-->
               <div class="my-2">
                 <label for="exampleInputAdresse" class="form-label">Adresse<b>*</b></label>
-                <input type="text" class="form-control" id="exampleInputAdresse" required>
+                <input type="text" class="form-control rounded-5 border border-3 border-mauve bg-beige shadow" id="exampleInputAdresse" required>
                 <div class="text-danger alert alert-danger d-none" role="alert" id="AdresseError"></div>
               </div>
 
@@ -74,8 +74,8 @@
                 </div>
 
                 <div class="d-flex justify-content-end">
-                  <input type="reset" value="Annuler" id="btn_annuler" class="btn text-bg-light btn-outline-dark">
-                  <input type="submit" id="btn_envoyer" class="btn text-bg-light btn-outline-dark mx-2">
+                  <input type="reset" value="Annuler" id="btn_annuler" class="btn shadow btn-form me-2 rounded-5 fs-5">
+                  <input type="submit" id="btn_envoyer" class="btn shadow btn-form rounded-5 fs-5">
                 </div>
               </div>
             </form>
