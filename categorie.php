@@ -19,10 +19,10 @@
     <div class="container py-2 bg-dark rounded-4">
       <?php include 'assets/php/header.php'; ?>
       <!--Main-->
-      <main class="bg-beige rounded-3 mt-2">
+      <main class="bg-beige rounded-4 mt-2 p-2">
         <div class="d-none d-lg-block parallax"><h1 class="d-none">Catégorie</h1></div>
         <div class="row mx-0">
-          <div id="carouselExample" class="carousel slide bg-mauve rounded-5 my-2">
+          <div id="carouselExample" class="carousel slide rounded-4 mt-2">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div id="categories-1" class="d-flex flex-wrap justify-content-around"></div>
@@ -32,11 +32,11 @@
               </div>
             </div>
             <div class="d-flex justify-content-around my-3">
-              <button class="btn fleche" type="button" data-slide="prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <button class="btn fleche bg-mauve rounded-4" type="button" data-slide="prev" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <img class="img-fluid" src="assets/img/the_district_brand/fleche-gauche.png" alt="Précedent">
                 <span class="visually-hidden">Précedent</span>
               </button>
-              <button class="btn fleche" type="button" data-slide="next" data-bs-target="#carouselExample" data-bs-slide="next">
+              <button class="btn fleche bg-mauve rounded-4" type="button" data-slide="next" data-bs-target="#carouselExample" data-bs-slide="next">
                 <img class="img-fluid" aria-hidden="true" src="assets/img/the_district_brand/fleche-droite.png" alt="Suivant">
                 <span class="visually-hidden">Suivant</span>
               </button>

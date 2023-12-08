@@ -17,7 +17,7 @@ $(document).ready(function() {
         var cardText = $('<p class="card-text scrollable-text h-100">' + plat.description + '</p>');
         var cardFooter = $('<div class="card-footer">'); // Utilisez la classe card-footer
         var cardPrice = $('<p class="card-text mb-0"><small class="text-black fs-6">Prix : ' + plat.prix + ' €</small></p>');
-        var commanderButton = $('<button class="btn btn-outline-dark text-bg-mauve beige">Commander</button>');
+        var commanderButton = $('<button class="btn btn-outline-dark text-bg-mauve beige"><a href="commande.php" class="text-decoration-none beige">Commander</a></button>');
 
         // Ajoutez les éléments à la structure de la carte
       imageCol.append(image);

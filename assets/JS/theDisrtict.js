@@ -88,10 +88,10 @@ $(document).ready(function() {
         group.forEach(function(categorie) {
             // Créez la structure de la carte simplifiée avec un lien hypertexte
             var cardLink = $('<a href="platsCategorie.php" class="card-link text-decoration-none"></a>');
-            var cardDiv = $('<div class="card col-sm-7 col-md-6 col-lg-3 m-4 bg-beige mauve border border-black text-center fs-4"></div>');
-            var image = $('<img src="' + categorie.image + '" class="card-img-top img-fluid" alt="' + categorie.libelle + '">');
-            var cardBody = $('<div class="card-body p-2"></div>');
-            var cardText = $('<span class="card-text mauve">' + categorie.libelle + '</span>');
+            var cardDiv = $('<div class="card col-sm-7 col-md-6 col-lg-3 m-4 text-center fs-4 rounded-5 bg-beige border border-black border-2"></div>');
+            var image = $('<img src="' + categorie.image + '" class="card-img-top img-fluid rounded-top-5" alt="' + categorie.libelle + '">');
+            var cardBody = $('<div class="card-body p-2 "></div>');
+            var cardText = $('<span class="card-text beige bg-mauve rounded-3 border border-black px-5 py-2">' + categorie.libelle + '</span>');
           
             // Ajoutez les éléments à la structure de la carte
             cardLink.append(image);
@@ -131,7 +131,7 @@ data.plat.forEach(function(plat) {
     var cardText = $('<p class="card-text scrollable-text h-100">' + plat.description + '</p>');
     var cardFooter = $('<div class="card-footer">'); // Utilisez la classe card-footer
     var cardPrice = $('<p class="card-text mb-0"><small class="text-black fs-6">Prix : ' + plat.prix + ' €</small></p>');
-    var commanderButton = $('<button class="btn btn-outline-dark text-bg-mauve beige">Commander</button>');
+    var commanderButton = $('<button class="btn btn-outline-dark text-bg-mauve beige"><a href="commande.php" class="text-decoration-none beige">Commander</a></button>');
 
     // Ajoutez les éléments à la structure de la carte
     imageCol.append(image);

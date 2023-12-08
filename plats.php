@@ -21,7 +21,7 @@
       <?php include 'assets/php/header.php'; ?>
       
       <main class="bg-beige rounded-3 mt-2 col-12">
-        <div class="parallax parallax2 d-none d-md-block"></div>
+        <div class="parallax parallax2 d-none d-lg-block"></div>
         <div id="plats" class="d-flex flex-wrap justify-content-around mx-auto"></div>
       </main>
 

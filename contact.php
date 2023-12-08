@@ -29,7 +29,7 @@
     <div class="container py-2 bg-dark rounded-4">
       <?php include 'assets/php/header.php'; ?>
 
-      <main class="bg-beige rounded-3 align-items-center">
+      <main class="bg-beige rounded-4 align-items-center">
         <div>
           <div></div><!--Plats commandé-->
           <div class="px-5 py-2 shadow mt-2 rounded-3">

@@ -30,10 +30,10 @@
     <div class="container py-2 bg-dark rounded-4">
       <?php include 'assets/php/header.php'; ?>
 
-      <main class="bg-beige rounded-3">
+      <main class="bg-beige rounded-4">
         <div>
           <div></div><!--Plats commandé-->
-          <div class="px-5 py-2 shadow mt-2 rounded-3 shadow">
+          <div class="px-5 py-2 shadow mt-2 rounded-3">
             <form action="" class="row d-flex justify-content-around">
               <!-- NOM PRENOM-->
               <div class="my-2">
@@ -75,7 +75,7 @@
 
                 <div class="d-flex justify-content-end">
                   <input type="reset" value="Annuler" id="btn_annuler" class="btn shadow btn-form me-2 rounded-5 fs-5">
-                  <input type="submit" id="btn_envoyer" class="btn shadow btn-form rounded-5 fs-5">
+                  <input type="submit" value="Commander" id="btn_envoyer" class="btn shadow btn-form rounded-5 fs-5">
                 </div>
               </div>
             </form>

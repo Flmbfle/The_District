@@ -43,7 +43,7 @@
 
             <!--Catégorie-->
 
-            <section class="d-none d-lg-block content bg-mauve rounded-5 border-secondary border-4 p-md-4 content-to-hide">
+            <section class="d-none d-lg-block content bg-beige rounded-5 border-secondary border-4 p-md-4 content-to-hide">
               <!--Première Ligne-->
               <div id="categories-1" class="d-flex flex-wrap justify-content-around"></div>
             </section>
