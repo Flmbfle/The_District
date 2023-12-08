@@ -26,7 +26,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSQ4RDF"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-    <div class="container py-2 bg-beige rounded-4">
+    <div class="container py-2 bg-dark rounded-4">
       <?php include 'assets/php/header.php'; ?>
 
       <main class="bg-beige rounded-3 align-items-center">

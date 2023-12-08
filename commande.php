@@ -33,7 +33,7 @@
       <main class="bg-beige rounded-3">
         <div>
           <div></div><!--Plats commandé-->
-          <div class="px-5 py-2 shadow mt-2 rounded-3">
+          <div class="px-5 py-2 shadow mt-2 rounded-3 shadow">
             <form action="" class="row d-flex justify-content-around">
               <!-- NOM PRENOM-->
               <div class="my-2">
