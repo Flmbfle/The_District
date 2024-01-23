@@ -31,6 +31,7 @@
                 <div id="categories-2" class="d-flex flex-wrap justify-content-around"></div>
               </div>
             </div>
+            
             <div class="d-flex justify-content-around my-3">
               <button class="btn fleche bg-mauve rounded-4" type="button" data-slide="prev" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <img class="img-fluid" src="assets/img/the_district_brand/fleche-gauche.png" alt="Précedent">
