@@ -1,6 +1,6 @@
 <?php
-require_once 'Views/Partials/header.php';
-require_once 'Views/Partials/menu.php';
+require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
+require_once '/home/flambi/Bureau/The_District/Views/Partials/menu.php';
 ?>
 <!--Main-->
 <h1 class="d-none">ACCUEIL</h1>
@@ -10,7 +10,7 @@ require_once 'Views/Partials/menu.php';
             <div class="video-content">
                 <!-- Vidéo -->
                 <video autoplay="autoplay" loop="loop">
-                    <source src="assets/vids/production_id_4253721(2160p).mp4" type="video/mp4">
+                    <source src="../assets/vids/production_id_4253721(2160p).mp4" type="video/mp4">
                 </video>
             </div>
             <!-- Recherche -->
@@ -42,13 +42,13 @@ require_once 'Views/Partials/menu.php';
         </div>
         <div class="carousel-inner max-car">
             <div class="carousel-item active" data-bs-interval="2000">
-                <img src="assets/img/caroussel/pexels.diva.plavalaguna.6150432.jpg" class="d-block w-100" alt="...">
+                <img src="../assets/img/caroussel/pexels.diva.plavalaguna.6150432.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block bg-beige opacity-50">
                     <p class="fs-3 fw-bold opacity-100">"Découvrez une nouvelle façon de régaler vos amis : commandez en ligne les plats les plus délicieux pour une soirée conviviale à la maison."</p>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-                <img src="assets/img/caroussel/A.cinematic.view.of.jpg" class="d-block w-100" alt="...">
+                <img src="../assets/img/caroussel/A.cinematic.view.of.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block bg-black opacity-75">
                     <p class="fs-3 fw-bold opacity-100 beige">"Notre restaurant vous offre une vue magnifique et des plats délicieux. Pour une expérience mémorable, n'oubliez pas de réserver votre table."</p>
                 </div>
@@ -65,5 +65,5 @@ require_once 'Views/Partials/menu.php';
     </div>
 </main>
 <?php
-require_once 'Views/Partials/footer.php';
+require_once '/home/flambi/Bureau/The_District/Views/Partials/footer.php';
 ?>

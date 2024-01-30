@@ -11,7 +11,7 @@
     <meta name="Publisher" content="Flmbfle">
     <meta name="Geography" content="80000, Amiens, France">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="../assets/CSS/style.css">
   </head>
   <body class="d-flex h-100 bg-dark">
     <div class="container py-2 bg-dark rounded-4">
