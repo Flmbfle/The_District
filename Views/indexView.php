@@ -1,10 +1,9 @@
 <?php
-require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
-require_once '/home/flambi/Bureau/The_District/Views/Partials/menu.php';
+    require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
 ?>
 <!--Main-->
 <h1 class="d-none">ACCUEIL</h1>
-<main class="bg-beige rounded-3 p-2 mt-2">
+<main class="bg-mauve rounded-3 p-2 mt-2">
     <article>
         <div class="video-container d-none d-lg-flex">
             <div class="video-content">
@@ -15,23 +14,62 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/menu.php';
             </div>
             <!-- Recherche -->
             <form class="d-none d-lg-flex position-absolute top-50 start-50 translate-middle">
-                <input id="searchInput" class="form-control me-2 rounded-pill fs-4" type="search" placeholder="Que désiriez-vous ?" aria-label="Search">
+                <input id="searchInput" class="form-control me-2 rounded-pill fs-4 text-center" type="search" placeholder="Que désirez-vous ?" aria-label="Search">
             </form>
         </div>
         <div id="searchResults" class="mt-2"></div>
-        <div class="content-to-hide">
-            <!--Parallax Catégorie-->
-            <div class="parallax d-none d-lg-block rounded-2 border border-2 border-black my-2 content-to-hide"></div>
+        <div class="content-to-hide shadow">
 
-            <!--Catégorie-->
-            <section class="d-none d-lg-block content bg-beige rounded-5 border-secondary border-4 p-md-4 content-to-hide">
-                <!--Première Ligne-->
-                <div id="categories-1" class="d-flex flex-wrap justify-content-around"></div>
-            </section>
+            <!--Parallax Catégorie-->
+            <div class="parallax d-none d-lg-block rounded-2 border border-2 border-black my-2 content-to-hide shadow"></div>
+
+            <div class="d-flex flex-wrap justify-content-around my-2 bg-beige rounded-3">
+
+                <?php
+                $categories = DAO::getCategoriePop();
+                foreach ($categories as $categorie) {
+                    echo '
+                    <div class="col-4 d-none d-lg-block content content-to-hide text-center">
+                        <div class="card bg-beige shadow border-mauve m-4 fs-4 rounded-5">
+                            <img src="/assets/img/categorie/' . $categorie['image'] . '" class="card-img-top img-fluid rounded-top-5" alt="Image de la carte">
+                            <div class="card-body">
+                                <h5 class="card-title mauve">' . $categorie['nom_categorie'] . '</h5>
+                            </div>
+                        </div>
+                    </div>';
+                }
+                ?>
+
+            </div>
+
+
             <!--Parallax Plats-->
-            <div class="mt-md-2 parallax parallax2 d-none d-lg-block rounded-2 content-to-hide"></div>
-            <!--Plats-->
-            <div id="plats" class="d-flex flex-wrap justify-content-around mx-auto"></div>
+            <div class="parallax parallax2 d-none d-lg-block rounded-2 border border-2 border-black my-2 content-to-hide"></div>
+
+            <div class="d-flex flex-wrap justify-content-around my-2 bg-beige rounded-3">
+                <!--Plats-->
+                <?php
+                $plats = DAO::getPlatsPop();
+                foreach ($plats as $plat) {
+                    echo '
+                    <div class="card m-3 col-lg-5 border border-black bg-beige mauve card-custom rounded-4">
+                        <div class="row g-0 bg-beige">
+                            <div class="col-md-4 col-lg-5 d-flex align-items-center justify-content-center">
+                                <img src="/assets/img/plats/' . $plat['image'] . '" class="card-img img-fluid" alt="Image de la carte">
+                            </div>
+                            <div class="col-md-8 col-lg-7 h-100 text-center px-3">
+                                <h5 class="card-title fs-3">' . $plat['libelle'] . '</h5>
+                                <p class="card-text scrollable-text h-100">' . $plat['description'] . '</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text mb-0"><small class="text-black fs-6">Prix : ' . $plat['prix'] . ' €</small></p>
+                            <button class="btn btn-outline-dark text-bg-mauve beige"><a href="commande.php" class="text-decoration-none beige">Commander</a></button>
+                        </div>
+                    </div>';
+                }
+                ?>
+            </div>
         </div>
     </article>
     <!--Caroussel Bas de Page-->

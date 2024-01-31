@@ -14,4 +14,8 @@
     <link rel="stylesheet" href="../assets/CSS/style.css">
   </head>
   <body class="d-flex h-100 bg-dark">
-    <div class="container py-2 bg-dark rounded-4">
+    <div class="container py-2">
+
+    <?php
+      require_once '/home/flambi/Bureau/The_District/Views/Partials/menu.php';
+    ?>
