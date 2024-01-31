@@ -15,7 +15,7 @@
                         <a class="nav-link beige fs-3 ms-2" href="../index.php">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link beige fs-3 ms-2" href="../Views/categoyView.php">Catégorie</a>
+                        <a class="nav-link beige fs-3 ms-2" href="../categorie.php">Catégorie</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link beige fs-3 ms-2" href="../Views/platsView.php">Plats</a>

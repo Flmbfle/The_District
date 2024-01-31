@@ -1,10 +1,11 @@
 <?php
     require_once 'Model/db.php';
-    require_once 'Model/Classes/Category.php';
-    require_once 'Model/Classes/Plats.php';
+    require_once 'Model/Classes/Category.class.php';
+    require_once 'Model/Classes/Plats.class.php';
 
     class DAO {
 
+            //CATEGORIE POPULAIRE
         public static function getCategoriePop() {
     
             $bdd = dbconnect();
@@ -29,6 +30,8 @@
                 exit('Erreur lors de l\'exécution de la requête : ' . $e->getMessage());
             }
         }
+
+            //PLATS POPULAIRE
         public static function getPlatsPop() {
 
             $bdd = dbconnect();
@@ -53,4 +56,53 @@
             }
         }    
 
+        public static function get_Act_Cat()
+        {
+            $bdd = dbconnect();
+
+            try {
+
+                $query = 
+                "SELECT *
+                FROM categorie c
+                WHERE c.active = 'Yes'
+                LIMIT 6";
+
+                $stmt = $bdd->prepare($query);
+                $stmt->execute();
+
+                $categorieAct = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                return $categorieAct;
+            } catch (PDOException $e) {
+                exit("Erreur lors de l'exécution de la requete : " . $e->getMessage());
+            }
+        }
+
+        public static function getToutesLesCategories() {
+            $bdd = dbconnect();
+    
+            try {
+                $query = "SELECT * FROM categorie";
+                $stmt = $bdd->prepare($query);
+                $stmt->execute();
+    
+                $toutesLesCategories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+                return $toutesLesCategories;
+            } catch (PDOException $e) {
+                exit("Erreur lors de l'exécution de la requete : " . $e->getMessage());
+            }
+        }
+    
+        public static function getAutresCategories() {
+            $categorieAct = self::get_Act_Cat();
+            $toutesLesCategories = self::getToutesLesCategories();
+    
+            $categorieActIds = array_column($categorieAct, 'id');
+    
+            return array_filter($toutesLesCategories, function($categorie) use ($categorieActIds) {
+                return !in_array($categorie['id'], $categorieActIds);
+            });
+        }
     }

@@ -1,5 +1,5 @@
 <!--Footer-->
-<footer class="d-none d-md-block text-center mt-2">
+<footer class="d-none d-md-block text-center mt-2 col-12">
   <div class="bg-mauve rounded-4 col-md-10 col-lg-8 col-xl-6 mx-auto ">
     <!-- Facebook -->
     <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button">
