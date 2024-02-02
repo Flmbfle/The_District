@@ -105,4 +105,28 @@
                 return !in_array($categorie['id'], $categorieActIds);
             });
         }
+
+        //PLATS POPULAIRE
+        public static function getPlats()
+        {
+            $bdd = dbconnect();
+        
+            try {
+        
+                $query = "SELECT p.id, p.libelle, p.description, p.prix, p.image, COUNT(co.id) AS total_commandes
+                FROM plat p
+                LEFT JOIN commande co ON p.id = co.id_plat
+                GROUP BY p.id
+                LIMIT 6"; 
+        
+                $stmt = $bdd->prepare($query);
+                $stmt->execute();
+        
+                $plats = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
+                return $plats;
+            } catch (PDOException $e) {
+                exit('Erreur lors de l\'exécution de la requête : ' . $e->getMessage());
+            }
+        }   
     }

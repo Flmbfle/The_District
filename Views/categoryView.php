@@ -1,20 +1,17 @@
 <?php
 require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
 ?>
-<div class="d-none d-lg-block parallax">
+<div class="d-none d-lg-block parallax rounded-3 my-3">
   <h1 class="d-none">Catégorie</h1>
 </div>
-
-<div class="row mx-0">
-
-  <div id="carouselExample" class="carousel slide rounded-4 mt-2 p-0">
+  <div id="carouselExample" class="carousel slide rounded-5 my-3 p-0">
     <div class="carousel-inner bg-beige rounded-3">
-      <div class="carousel-item active d-flex flex-wrap justify-content-around my-2 ">
-
-        <?php
-        foreach ($categorieAct as $categorie) {
-          echo
-          '
+      <div class="carousel-item active">
+        <div class="row justify-content-around">
+          <?php
+          foreach ($categorieAct as $categorie) {
+            echo
+            '
             <div class="col-4 d-none d-lg-block content content-to-hide text-center">
               <div class="card bg-beige shadow border-mauve m-4 fs-4 rounded-5">
                 <img src="/assets/img/categorie/' . $categorie['image'] . '" class="card-img-top img-fluid rounded-top-5" alt="Image de la carte">
@@ -24,16 +21,16 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
               </div>
             </div>
           ';
-        }
-        ?>
+          }
+          ?>
+        </div>
       </div>
-
-      <div class="carousel-item d-flex flex-wrap justify-content-around my-2 ">
-
-        <?php
-        foreach ($autresCategories as $categorie) {
-          echo 
-          '
+      <div class="carousel-item">
+        <div class="row justify-content-around">
+          <?php
+          foreach ($autresCategories as $categorie) {
+            echo
+            '
             <div class="col-4 d-none d-lg-block content content-to-hide text-center">
               <div class="card bg-beige shadow border-mauve m-4 fs-4 rounded-5">
                 <img src="/assets/img/categorie/' . $categorie['image'] . '" class="card-img-top img-fluid rounded-top-5" alt="Image de la carte">
@@ -43,14 +40,14 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
               </div>
             </div>
           ';
-        }
-        ?>
+          }
+          ?>
+        </div>
       </div>
     </div>
   </div>
-
   <div class="d-flex justify-content-around my-3">
-    <button class="btn fleche bg-mauve rounded-4" type="button" data-bs-slide="prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <button class="btn fleche bg-mauve rounded-4 shadow" type="button" data-bs-slide="prev" data-bs-target="#carouselExample" data-bs-slide="prev">
       <img class="img-fluid" src="../assets/img/the_district_brand/fleche-gauche.png" alt="Précedent">
       <span class="visually-hidden">Précedent</span>
     </button>
@@ -59,7 +56,6 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
       <span class="visually-hidden">Suivant</span>
     </button>
   </div>
-</div>
 <?php
 require_once '/home/flambi/Bureau/The_District/Views/Partials/footer.php';
 ?>

@@ -18,10 +18,10 @@
                         <a class="nav-link beige fs-3 ms-2" href="../categorie.php">Catégorie</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link beige fs-3 ms-2" href="../Views/platsView.php">Plats</a>
+                        <a class="nav-link beige fs-3 ms-2" href="../plats.php">Plats</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link beige fs-3 ms-2" href="../Views/contactView.php">Contact</a>
+                        <a class="nav-link beige fs-3 ms-2" href="../contact.php">Contact</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">

@@ -73,14 +73,3 @@ JOIN categorie c ON c.id = p.id_categorie
 SET p.prix = p.prix * 1.1
 WHERE c.nom_categorie = 'Pizza';
 
-foreach ($categorieA as $categorie) {
-                    echo '
-                      <div class="col-4 d-none d-lg-block content content-to-hide text-center">
-                          <div class="card bg-beige shadow border-mauve m-4 fs-4 rounded-5">
-                              <img src="/assets/img/categorie/' . $categorie['image'] . '" class="card-img-top img-fluid rounded-top-5" alt="Image de la carte">
-                              <div class="card-body">
-                                  <h5 class="card-title mauve">' . $categorie['nom_categorie'] . '</h5>
-                              </div>
-                          </div>
-                      </div>';
-                }

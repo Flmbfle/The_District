@@ -8,7 +8,7 @@
         <div class="video-container d-none d-lg-flex">
             <div class="video-content">
                 <!-- Vidéo -->
-                <video autoplay="autoplay" loop="loop">
+                <video autoplay="autoplay" loop="autoloop">
                     <source src="../assets/vids/production_id_4253721(2160p).mp4" type="video/mp4">
                 </video>
             </div>
@@ -52,7 +52,7 @@
                 $plats = DAO::getPlatsPop();
                 foreach ($plats as $plat) {
                     echo '
-                    <div class="card m-3 col-lg-5 border border-black bg-beige mauve card-custom rounded-4">
+                    <div class="card m-3 col-lg-5 border border-black bg-beige mauve card-custom rounded-4 shadow">
                         <div class="row g-0 bg-beige">
                             <div class="col-md-4 col-lg-5 d-flex align-items-center justify-content-center">
                                 <img src="/assets/img/plats/' . $plat['image'] . '" class="card-img img-fluid" alt="Image de la carte">

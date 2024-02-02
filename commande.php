@@ -99,3 +99,7 @@
       <!-- <script src="assets/js/contact.js"></script> -->
   </body>
 </html>
+<?php
+require_once 'Model/Managers/DAO.php';
+
+require_once 'Views/contactView.php';

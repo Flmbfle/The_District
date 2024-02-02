@@ -44,7 +44,7 @@ video {
 
 .parallax {
     /* The image used */
-    background-image: url("/assets/img/parallax/The\ district.png");
+    background-image: url("/assets/img/parallax/categories.png");
     
     /* Set a specific height */
     min-height: 40vh; 
@@ -84,7 +84,7 @@ video {
 }
 
 .parallax2 {
-    background-image: url("/assets/img/parallax/The\ district\ \(1\).png")
+    background-image: url("/assets/img/parallax/plats.png")
 }
 
 .card {
