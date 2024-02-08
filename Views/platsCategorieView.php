@@ -6,8 +6,11 @@ $categorieId = $_GET['categorie_id']; // Assurez-vous que le nom de l'identifian
 
 // Utiliser la fonction pour récupérer les plats de la catégorie spécifiée
 $platsByCategorie = DAO::getPlatsByCategorie($categorieId);
-
-// Boucler à travers les plats et les afficher
+?>
+<div class="d-flex flex-wrap justify-content-around mt-2 bg-beige rounded-top-3">
+<!--Plats-->
+<?php
+$plats = DAO::getPlatsPop();
 foreach ($platsByCategorie as $plat) {
     echo '
     <div class="card m-3 col-lg-5 border border-black bg-beige mauve card-custom rounded-4 shadow">
@@ -23,10 +26,14 @@ foreach ($platsByCategorie as $plat) {
         <div class="card-footer">
             <p class="card-text mb-0"><small class="text-black fs-6">Prix : ' . $plat['prix'] . ' €</small></p>
             <a href="/commande.php?id=' . $plat['id'] . '" class="btn btn-outline-dark text-bg-mauve beige">Commander</a>
-            
         </div>
     </div>';
 }
-
+?>
+</div>
+<div class="d-flex justify-content-end bg-beige rounded-bottom-3">
+    <a href="javascript:history.back()" class="btn btn-outline-dark text-bg-mauve m-2 beige">Retour</a>
+</div>
+<?php
 require_once '/home/flambi/Bureau/The_District/Views/Partials/footer.php'
 ?>  

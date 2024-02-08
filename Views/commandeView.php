@@ -1,7 +1,7 @@
 <?php
 require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
 ?>
-<main class="bg-beige rounded-4">
+<main class="bg-beige rounded-4 mt-2">
     <div>
       <div class="d-flex justify-content-center">
       <?php

@@ -35,7 +35,7 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
               <div class="card bg-beige shadow border-mauve m-4 fs-4 rounded-5">
                 <img src="/assets/img/categorie/' . $categorie['image'] . '" class="card-img-top img-fluid rounded-top-5" alt="Image de la carte">
                 <div class="card-body">
-                <a href="/platsCategorie.php?id=' . $categorie['id'] . '" class="btn card-title mauve fs-5 p-0"><h5 class="m-0">Ok</h5></a>
+                <a href="/platsCategorie.php?categorie_id=' . $categorie['id'] . '" class="btn card-title mauve fs-5 p-0"><h5 class="m-0">' . $categorie['nom_categorie'] . '</h5></a>
                 </div>
               </div>
             </div>

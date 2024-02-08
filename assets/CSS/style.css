@@ -17,18 +17,6 @@ body {
     --bs-border-opacity: 1;
     border-color: #970747 !important;
 }
-.image-100 {
-    width: 100px;
-}
-.small-logo {
-    max-width: 50px;
-    max-height: 50px;
-}
-.image-50 {
-    height: 50vh;
-    width: 100%;
-}
-
 
 video {
 	position: absolute;
@@ -98,16 +86,10 @@ video {
     transform: scale(1.02);
 }
 
-footer li:hover {
+footer a:hover {
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform:scale(1.2);
-}
-
-.max-car {
-    position: relative;
-    height: 50vh;
-    overflow: hidden;
 }
 
 .carousel-caption {
