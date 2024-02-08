@@ -17,7 +17,7 @@
                 <input id="searchInput" class="form-control me-2 rounded-pill fs-4 text-center" type="search" placeholder="Que désirez-vous ?" aria-label="Search">
             </form>
         </div>
-        <div id="searchResults" class="mt-2"></div>
+        <div id="results" class="mt-2 d-flex justify-content-center flex-wrap"></div>
         <div class="content-to-hide shadow">
 
             <!--Parallax Catégorie-->
@@ -29,11 +29,11 @@
                 $categories = DAO::getCategoriePop();
                 foreach ($categories as $categorie) {
                     echo '
-                    <div class="col-4 d-none d-lg-block content content-to-hide text-center">
+                    <div class="col-3 m-1 d-none d-lg-block content content-to-hide text-center">
                         <div class="card bg-beige shadow border-mauve m-4 fs-4 rounded-5">
                             <img src="/assets/img/categorie/' . $categorie['image'] . '" class="card-img-top img-fluid rounded-top-5" alt="Image de la carte">
                             <div class="card-body">
-                                <h5 class="card-title mauve">' . $categorie['nom_categorie'] . '</h5>
+                            <a href="/platsCategorie.php?id=' . $categorie['id'] . '" class="btn card-title mauve fs-5 p-0"><h5 class="m-0">' . $categorie['nom_categorie'] . '</h5></a>
                             </div>
                         </div>
                     </div>';
@@ -64,7 +64,7 @@
                         </div>
                         <div class="card-footer">
                             <p class="card-text mb-0"><small class="text-black fs-6">Prix : ' . $plat['prix'] . ' €</small></p>
-                            <button class="btn btn-outline-dark text-bg-mauve beige"><a href="commande.php" class="text-decoration-none beige">Commander</a></button>
+                            <a href="/commande.php?id=' . $plat['id'] . '" class="btn btn-outline-dark text-bg-mauve beige">Commander</a>
                         </div>
                     </div>';
                 }
@@ -105,3 +105,4 @@
 <?php
 require_once '/home/flambi/Bureau/The_District/Views/Partials/footer.php';
 ?>
+<script src="assets/JS/recherche.js"></script>

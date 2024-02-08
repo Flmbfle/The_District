@@ -21,7 +21,8 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
                 </div>
                 <div class="card-footer">
                     <p class="card-text mb-0"><small class="text-black fs-6">Prix : ' . $plat['prix'] . ' €</small></p>
-                    <button class="btn btn-outline-dark text-bg-mauve beige"><a href="commande.php" class="text-decoration-none beige">Commander</a></button>
+                    <a href="/commande.php?id=' . $plat['id'] . '" class="btn btn-outline-dark text-bg-mauve beige">Commander</a>
+                    
                 </div>
             </div>';
         }

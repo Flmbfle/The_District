@@ -3,5 +3,7 @@
 
   $categories = DAO::getCategoriePop();
   $plats = DAO::getPlatsPop();
+  
+  
 
   require_once 'Views/indexView.php';

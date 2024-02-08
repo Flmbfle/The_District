@@ -129,4 +129,36 @@
                 exit('Erreur lors de l\'exécution de la requête : ' . $e->getMessage());
             }
         }   
+
+        public static function getPlatById($platId) {
+            $bdd = dbconnect();
+            try {
+                $query = "SELECT * FROM plat WHERE id = :platId";
+                $stmt = $bdd->prepare($query);
+                $stmt->bindParam(':platId', $platId);
+                $stmt->execute();
+    
+                $platDetails = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+                return $platDetails;
+            } catch (PDOException $e) {
+                exit("Erreur lors de l'exécution de la requête : " . $e->getMessage());
+            }
+        }
+
+        public static function getPlatsByCategorie($id) {
+            $bdd = dbconnect();
+            try {
+                $query = "SELECT * FROM plat WHERE id_categorie = :id";
+                $stmt = $bdd->prepare($query);
+                $stmt->bindParam(':id', $id);
+                $stmt->execute();
+        
+                $platByCategorie = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        
+                return $platByCategorie;
+            } catch (PDOException $e) {
+                exit("Erreur lors de l'exécution de la requête : " . $e->getMessage());
+            }
+        }
     }

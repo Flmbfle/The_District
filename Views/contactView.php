@@ -4,7 +4,7 @@
         <div>
           <div></div><!--Plats commandé-->
           <div class="px-5 py-2 shadow mt-2 rounded-3">
-            <form action="/traitement_form.php" class="row d-flex justify-content-around" method="post">
+            <form action="traitement_form.php" class="row d-flex justify-content-around" method="post">
               <!-- NOM-->
               <div class="col-md-6 my-2">
                 <label for="InputNom" class="form-label"><h4>Nom<b>*</b></h4></label>

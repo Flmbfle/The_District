@@ -12,11 +12,11 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
           foreach ($categorieAct as $categorie) {
             echo
             '
-            <div class="col-4 d-none d-lg-block content content-to-hide text-center">
+            <div class="col-3 m-1 d-none d-lg-block content content-to-hide text-center">
               <div class="card bg-beige shadow border-mauve m-4 fs-4 rounded-5">
                 <img src="/assets/img/categorie/' . $categorie['image'] . '" class="card-img-top img-fluid rounded-top-5" alt="Image de la carte">
                 <div class="card-body">
-                  <h5 class="card-title mauve">' . $categorie['nom_categorie'] . '</h5>
+                <a href="/platsCategorie.php?categorie_id=' . $categorie['id'] . '" class="btn card-title mauve fs-5 p-0"><h5 class="m-0">' . $categorie['nom_categorie'] . '</h5></a>
                 </div>
               </div>
             </div>
@@ -31,11 +31,11 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
           foreach ($autresCategories as $categorie) {
             echo
             '
-            <div class="col-4 d-none d-lg-block content content-to-hide text-center">
+            <div class="col-3 MD-1 d-none d-lg-block content content-to-hide text-center">
               <div class="card bg-beige shadow border-mauve m-4 fs-4 rounded-5">
                 <img src="/assets/img/categorie/' . $categorie['image'] . '" class="card-img-top img-fluid rounded-top-5" alt="Image de la carte">
                 <div class="card-body">
-                  <h5 class="card-title mauve">' . $categorie['nom_categorie'] . '</h5>
+                <a href="/platsCategorie.php?id=' . $categorie['id'] . '" class="btn card-title mauve fs-5 p-0"><h5 class="m-0">Ok</h5></a>
                 </div>
               </div>
             </div>
