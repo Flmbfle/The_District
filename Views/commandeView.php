@@ -1,7 +1,7 @@
 <?php
 require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
 ?>
-<main class="bg-beige rounded-4 mt-2">
+<main class="rounded-3 border beige">
     <div>
       <div class="d-flex justify-content-center">
       <?php
@@ -14,7 +14,7 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
           // Vérifiez si les détails du plat sont récupérés avec succès
           if ($platDetails) {
               echo '
-              <div class="card m-3 col-lg-5 border border-black bg-beige mauve card-custom rounded-4 shadow">
+              <div class="card m-3 col-lg-5 border border-black bg-beige card-custom rounded-4 shadow">
                   <div class="row g-0 bg-beige">
                       <div class="col-md-4 col-lg-5 d-flex align-items-center justify-content-center">
                           <img src="/assets/img/plats/' . $platDetails['image'] . '" class="card-img img-fluid" alt="Image de la carte">
@@ -41,28 +41,28 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
           <!-- NOM PRENOM-->
           <div class="my-2">
             <label for="exampleInputNom" class="form-label">Nom et Prénom<b>*</b></label>
-            <input type="text" name="exampleInputNom" class="form-control rounded-5 border border-3 border-mauve bg-beige shadow" id="exampleInputNom" placeholder="Veuillez saisir votre nom et votre prénom" required>
+            <input type="text" name="exampleInputNom" class="form-control rounded-5 btn-outline-dark bg-beige shadow" id="exampleInputNom" placeholder="Veuillez saisir votre nom et votre prénom" required>
             <div class="text-danger alert alert-danger d-none" role="alert" id="NomError">Veuillez saisir un Nom valide</div>
           </div>
           <!-- EMAIL -->
           <div class="col-md-6 my-2">
             <label for="exampleInputEmail" class="form-label">Email<b>*</b></label>
-            <input type="email" name="exampleInputEmail" class="form-control rounded-5 border border-3 border-mauve bg-beige shadow" id="exampleInputEmail" placeholder="dave.loper@afpa.fr" required>
+            <input type="email" name="exampleInputEmail" class="form-control rounded-5 btn-outline-dark bg-beige shadow" id="exampleInputEmail" placeholder="dave.loper@afpa.fr" required>
             <div class="text-danger alert alert-danger d-none" role="alert" id="EmailError">Veuillez saisir une email valide</div>
-            <div id="emailHelp" class="form-text text-black-50">
-              Nous ne partagerons jamais votre email.
+            <div id="emailHelp" class="form-text">
+              <span class="beige">Nous ne partagerons jamais votre email.</span>
               </div>
             </div>
             <!--TELEPHONE-->
             <div class="col-md-6 my-2">
               <label for="exampleInputTel" class="form-label">Téléphone<b>*</b></label>
-              <input type="tel" name="exampleInputTel" class="form-control rounded-5 border border-3 border-mauve bg-beige shadow" id="exampleInputTel" placeholder="xx.xx.xx.xx.xx" required>
+              <input type="tel" name="exampleInputTel" class="form-control rounded-5 btn-outline-dark bg-beige shadow" id="exampleInputTel" placeholder="xx.xx.xx.xx.xx" required>
               <div class="text-danger alert alert-danger d-none" role="alert" id="TelError">Veuillez saisir un numéro de téléphone Français</div>
             </div>
             <!--ADRESSE-->
             <div class="my-2">
               <label for="exampleInputAdresse" class="form-label">Adresse<b>*</b></label>
-              <input type="text" name="exampleInputAdresse" class="form-control rounded-5 border border-3 border-mauve bg-beige shadow" id="exampleInputAdresse" required>
+              <input type="text" name="exampleInputAdresse" class="form-control rounded-5 btn-outline-dark bg-beige shadow" id="exampleInputAdresse" required>
               <div class="text-danger alert alert-danger d-none" role="alert" id="AdresseError">Veuillez saisir une adresse valide</div>
             </div>
             <!--CONDITIONS-->

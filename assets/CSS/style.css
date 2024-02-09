@@ -1,21 +1,22 @@
-body {
-    min-width: 100vh;
-}
 .beige {
-    color: #FEF4E8;
+    color:#DDD0C8;
 }
 .bg-beige {
-    background-color: #FEF4E8;
+    background-color:#DDD0C8;
 }
-.mauve {
-    color: #970747;
+.border-beige
+.gris {
+    color: #323232;
 }
-.bg-mauve {
-    background-color: #970747;
+.bg-gris {
+    background-color: #323232;
 }
-.border-mauve {
-    --bs-border-opacity: 1;
-    border-color: #970747 !important;
+.bg-fondu {
+    background: rgb(50,50,50);
+    background: linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(115,110,107,1) 20%, rgba(143,136,132,1) 30%, rgba(163,154,149,1) 40%, rgba(155,148,142,1) 70%, rgba(120,115,111,1) 80%, rgba(50,50,50,1) 100%);
+}
+p {
+    font-size: large;
 }
 
 video {
@@ -24,27 +25,10 @@ video {
 	left: 50%;
 	min-width: 100%;
 	min-height: 100%;
-	width: auto;
-	height: 700px;
+	width: 100%;
 	z-index: 0;
 	transform: translateX(-50%) translateY(-50%);
 }
-
-.parallax {
-    /* The image used */
-    background-image: url("/assets/img/parallax/categories.png");
-    
-    /* Set a specific height */
-    min-height: 40vh; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: auto;
-    background-color: #FEF4E8;
-  }
-
 
 .video-container {
     position: relative;
@@ -52,34 +36,34 @@ video {
     overflow: hidden;
 }
 
-.parallax-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
+.parallax {
+    background-image: url("/assets/img/parallax/categories.png");
 
-.video-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-}
+    min-height: 40vh; 
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: #FEF4E8;
+}
 .parallax2 {
-    background-image: url("/assets/img/parallax/plats.png")
+    background-image: url("/assets/img/parallax/plats.png");
+
+    min-height: 40vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: #FEF4E8;
 }
 
 .card {
     transition: transform .2s;
 }
-
-
 .card:hover  {
     -ms-transform: scale(1.02);
     -webkit-transform: scale(1.02);
@@ -92,34 +76,9 @@ footer a:hover {
     transform:scale(1.2);
 }
 
-.carousel-caption {
-    margin-bottom: 40vh;
-}
-
-.nav-link {
-    font-weight:600;
-    font-size: larger;
-}
-
 .fleche {
     width: 180px;
 }
-
-.text-bg-mauve {
-    background-color:#970747;
-}
-
-  /* Classe pour les cartes */
-  .card-custom {
-    max-height: 260px;
-    margin: 0;
-    border: 1px solid #ccc; /* Ajoutez une bordure autour des cartes si nécessaire */
-    overflow: hidden; /* Empêche le contenu de déborder de la carte */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Place le contenu en bas de la carte */
-    
-  }
   
   /* Classe pour positionner le bouton "Commander" et le prix en bas à droite */
   .card-footer {
@@ -128,12 +87,32 @@ footer a:hover {
     align-items: center;
   }
   
-
-
 .scrollable-text {
     max-height: 100px; /* Hauteur maximale souhaitée */
     overflow-y: auto; /* Ajoutez une barre de défilement verticale en cas de dépassement du contenu */
 }
+
+.image-container{
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.image-container img {
+
+	min-height: 100%;
+	width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 28%;
+    left: 0; /* Alignez la légende à gauche du conteneur */
+    right: 0; /* Alignez la légende à droite du conteneur */
+    padding: 50px; /* Ajoutez un peu d'espacement autour de la légende */
+    color: white; /* Couleur du texte */
+}
+
 @media (max-width: 768px) {@media (max-width: 768px) {
     .card {
         width: 100%;
@@ -151,14 +130,15 @@ footer a:hover {
 }
 
 .btn-form {
-    background-color: #FEF4E8;
+    background-color: #DDD0C8;
     transition: transform 0.4s;
-    border-color: #970747;
+    border-color: #323232;
     border-width: 2px ;
+    margin: 5px;
 }
 .btn-form:hover {
     -ms-transform: scale(1.15); /* IE 9 */
     -webkit-transform: scale(1.15); /* Safari 3-8 */
     transform: scale(1.15);
-    border-color: #970747;
+    border-color: #323232;
 }

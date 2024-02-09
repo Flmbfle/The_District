@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <br>
                     Voici le récapitulatif de votre commande :
                 </p>
-                <div class='card m-5 col-8 border border-black bg-beige mauve card-custom rounded-4 shadow mx-auto bg-light'>
+                <div class='card m-5 col-8 border border-black bg-beige card-custom rounded-4 shadow mx-auto bg-light'>
                 <div class='row g-0 bg-beige'>
                     <div class='col-md-4 col-lg-5 d-flex align-items-center justify-content-center'>
                         <img src='$cheminImage' class='card-img img-fluid' alt='Image de la carte'>

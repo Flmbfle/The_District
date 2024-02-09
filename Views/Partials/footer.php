@@ -1,6 +1,6 @@
 <!--Footer-->
-<footer class="d-none d-md-block text-center mt-2 col-12">
-  <div class="bg-mauve rounded-4 col-md-10 col-lg-8 col-xl-6 mx-auto ">
+<footer class="d-none d-md-block text-center my-3 col-12">
+  <div class="rounded-4 col-md-10 col-lg-8 col-xl-4 mx-auto border">
     <!-- Facebook -->
     <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
