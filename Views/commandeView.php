@@ -21,7 +21,7 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
                       </div>
                       <div class="col-md-8 col-lg-7 h-100 text-center px-3">
                           <h5 class="card-title fs-3">' . $platDetails['libelle'] . '</h5>
-                          <p class="card-text scrollable-text h-100">' . $platDetails['description'] . '</p>
+                          <p class="card-text">' . $platDetails['description'] . '</p>
                       </div>
                   </div>
                   <div class="card-footer">
