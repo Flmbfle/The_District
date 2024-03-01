@@ -1,5 +1,5 @@
 <?php
-    require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
+    require_once 'Partials/header.php';
 ?>
 
 <!--Main-->
@@ -124,6 +124,6 @@
 
 </main>
 <?php
-require_once '/home/flambi/Bureau/The_District/Views/Partials/footer.php';
+require_once 'Partials/footer.php';
 ?>
 <script src="assets/JS/recherche.js"></script>

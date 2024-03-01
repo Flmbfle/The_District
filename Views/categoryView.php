@@ -1,6 +1,5 @@
-<?php
-require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
-?>
+<?php require_once 'Partials/header.php';?>
+
 <main class="border rounded-3">
   <div class="d-none d-lg-block parallax rounded-3 my-3">
     <h1 class="d-none">Catégorie</h1>
@@ -59,5 +58,5 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
     </div>
     </main>
 <?php
-require_once '/home/flambi/Bureau/The_District/Views/Partials/footer.php';
+require_once 'Partials/footer.php';
 ?>

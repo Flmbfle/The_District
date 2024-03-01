@@ -18,5 +18,5 @@
     <div class="container-fluid ">
 
     <?php
-      require_once '/home/flambi/Bureau/The_District/Views/Partials/menu.php';
+      require_once 'menu.php';
     ?>

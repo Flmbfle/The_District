@@ -1,4 +1,4 @@
-<?php require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';?>
+<?php require_once 'Partials/header.php';?>
 
 <main class="rounded-4 align-items-center beige border">
         <div>
@@ -69,4 +69,4 @@
       </main>
       <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
       <script src="assets/JS/contact.js"></script>
-<?php require_once "Views/Partials/footer.php";?>
+<?php require_once "Partials/footer.php";?>

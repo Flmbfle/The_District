@@ -1,5 +1,5 @@
 <?php
-require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
+require_once 'Partials/header.php';
 ?>
 <main class="rounded-3 my-3 col-12 border">
     <div class="parallax parallax2 d-none d-lg-block my-3"></div>
@@ -29,5 +29,5 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
     </div>
 </main>
 <?php
-require_once '/home/flambi/Bureau/The_District/Views/Partials/footer.php';
+require_once 'Partials/footer.php';
 ?>

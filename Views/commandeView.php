@@ -1,6 +1,5 @@
-<?php
-require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
-?>
+<?php require_once 'Partials/header.php';?>
+
 <main class="rounded-3 border beige">
     <div>
       <div class="d-flex justify-content-center">
@@ -84,5 +83,5 @@ require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="assets/JS/commande.js"></script>
 <?php
-require_once '/home/flambi/Bureau/The_District/Views/Partials/footer.php';
+require_once 'Partials/footer.php';
 ?>

@@ -1,5 +1,4 @@
-<?php
-require_once '/home/flambi/Bureau/The_District/Views/Partials/header.php';
+<?php require_once 'Partials/header.php';
 
 // Récupérer l'identifiant de la catégorie depuis l'URL
 $categorieId = $_GET['categorie_id']; // Assurez-vous que le nom de l'identifiant correspond à celui dans l'URL
@@ -37,5 +36,5 @@ foreach ($platsByCategorie as $plat) {
 </div>
 </main>
 <?php
-require_once '/home/flambi/Bureau/The_District/Views/Partials/footer.php'
+require_once 'Partials/footer.php'
 ?>  
