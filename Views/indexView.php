@@ -108,7 +108,7 @@
             <div class="carousel-item image-container" data-bs-interval="2000">
                 <img src="../assets/img/caroussel/pexels-elevate-1267696.jpg" class="img-fluid d-block" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <p class="fs-3 fw-bold opacity-100 mb-5 pb-5">"Notre restaurant vous offre une vue magnifique et des plats délicieux. Pour une expérience mémorable, n'oubliez pas de réserver votre table."</p>
+                    <p class="fs-3 fw-bold opacity-100 mb-5 pb-5 beige">"Notre restaurant vous offre une vue magnifique et des plats délicieux. Pour une expérience mémorable, n'oubliez pas de réserver votre table."</p>
                 </div>
             </div>
         </div>

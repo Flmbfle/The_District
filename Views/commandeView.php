@@ -41,13 +41,13 @@
           <div class="my-2">
             <label for="exampleInputNom" class="form-label">Nom et Prénom<b>*</b></label>
             <input type="text" name="exampleInputNom" class="form-control rounded-5 btn-outline-dark bg-beige shadow" id="exampleInputNom" placeholder="Veuillez saisir votre nom et votre prénom" required>
-            <div class="text-danger alert alert-danger d-none" role="alert" id="NomError">Veuillez saisir un Nom valide</div>
+            <div class="text-danger alert alert-danger d-none rounded-pill mt-1" role="alert" id="NomError">Veuillez saisir un Nom valide</div>
           </div>
           <!-- EMAIL -->
           <div class="col-md-6 my-2">
             <label for="exampleInputEmail" class="form-label">Email<b>*</b></label>
             <input type="email" name="exampleInputEmail" class="form-control rounded-5 btn-outline-dark bg-beige shadow" id="exampleInputEmail" placeholder="dave.loper@afpa.fr" required>
-            <div class="text-danger alert alert-danger d-none" role="alert" id="EmailError">Veuillez saisir une email valide</div>
+            <div class="text-danger alert alert-danger d-none rounded-pill mt-1" role="alert" id="EmailError">Veuillez saisir une email valide</div>
             <div id="emailHelp" class="form-text">
               <span class="beige">Nous ne partagerons jamais votre email.</span>
               </div>
@@ -56,13 +56,13 @@
             <div class="col-md-6 my-2">
               <label for="exampleInputTel" class="form-label">Téléphone<b>*</b></label>
               <input type="tel" name="exampleInputTel" class="form-control rounded-5 btn-outline-dark bg-beige shadow" id="exampleInputTel" placeholder="xx.xx.xx.xx.xx" required>
-              <div class="text-danger alert alert-danger d-none" role="alert" id="TelError">Veuillez saisir un numéro de téléphone Français</div>
+              <div class="text-danger alert alert-danger d-none rounded-pill mt-1" role="alert" id="TelError">Veuillez saisir un numéro de téléphone Français</div>
             </div>
             <!--ADRESSE-->
             <div class="my-2">
               <label for="exampleInputAdresse" class="form-label">Adresse<b>*</b></label>
               <input type="text" name="exampleInputAdresse" class="form-control rounded-5 btn-outline-dark bg-beige shadow" id="exampleInputAdresse" required>
-              <div class="text-danger alert alert-danger d-none" role="alert" id="AdresseError">Veuillez saisir une adresse valide</div>
+              <div class="text-danger alert alert-danger d-none rounded-pill mt-1" role="alert" id="AdresseError">Veuillez saisir une adresse valide</div>
             </div>
             <!--CONDITIONS-->
             <div class="row">
